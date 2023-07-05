@@ -6,8 +6,7 @@ const Todoapp = () => {
 	const [items, setItems] = useState([]);
 
 	const addItm = () => {
-		if (!inputData) {
-		} else {
+		if (inputData) {
 			setItems([...items, inputData])
 			setInputData('')
 		}
@@ -22,8 +21,6 @@ const Todoapp = () => {
 	}
 
 	return (
-		<>
-
 			<div className="main-div">
 				<header className="app-header">
 					<h1 >TODO APP</h1>
@@ -56,7 +53,6 @@ const Todoapp = () => {
 					</div>
 				</section>
 			</div>
-		</>
 	);
 };
 
